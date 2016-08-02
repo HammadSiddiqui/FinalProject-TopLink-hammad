@@ -1,0 +1,3 @@
+Template.website.helpers({
+   data : {}
+});

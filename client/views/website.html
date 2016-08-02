@@ -1,0 +1,22 @@
+<template name="website">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>{{title}}</h1>
+        </div>
+    </div>
+    <div class="row created">
+        <div class="col-md-3">
+            Created by {{createdBy}} {{formatDate createdAt}}
+        </div>
+        <div class="col-md-2">
+            {{votes}} Votes
+        </div>
+    </div>
+    <div class="row list-description">
+        <div class="col-md-12">
+            <p>{{description}}</p>
+        </div>
+    </div>
+
+
+</template>

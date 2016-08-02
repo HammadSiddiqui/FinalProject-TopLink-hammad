@@ -1,0 +1,40 @@
+<!-- template that displays individual website entries -->
+<template name="website_item">
+    <li class="website_item">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><a href="{{url}}">{{title}}</a></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 created">
+                Created by {{createdBy}} {{formatDate createdAt}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 list-description">
+                <p>
+                    {{description}}
+                    <br>
+                    <a class="btn btn-info" href="/{{_id}}">Details</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a href="#" class="btn btn-default js-upvote">
+                    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                </a>
+                <a href="#" class="btn btn-default js-downvote">
+                    <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <span>Total votes:{{votes}}</span>
+            </div>
+        </div>
+
+        <!-- you will be putting your up and down vote buttons in here! -->
+
+    </li>
+</template>

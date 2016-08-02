@@ -1,0 +1,19 @@
+<head>
+    <title>Top Link</title>
+</head>
+
+<body>
+
+</body>
+<template name="ApplicationLayout">
+        {{> navbar }}
+
+    <div class="container">
+        {{#if currentUser}}
+
+          {{>yield "form"}}
+        {{/if}}
+        {{> yield "main"}}
+        {{> yield "comments"}}
+    </div>
+</template>
